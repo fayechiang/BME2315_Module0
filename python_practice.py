@@ -2,6 +2,9 @@
 # As discussed in class, feel free to use AI tools to help you complete this assignment, but remember to cite them.
 # I encourage you to try the problems yourself first and only use AI tools when you are stuck to benefit your learning.
 # Name: Faye Chiang 
+# AI USE DISCLOSURE:
+# OpenAI Codex was used on September 3, 2026, to review this file for
+# completeness and check the solutions for possible errors.
 
 # %% ###########################################################
 # Problem 1: Practice writing pseudocode
