@@ -15,7 +15,7 @@
 
 """ # you can use three double-quotes to write multi-line comments
 XXX 
-Have user input an integer N
+Have user input an integer N 
 Set a to 0
 Set b to 1
 Set count to 0
@@ -58,12 +58,12 @@ print(total) # print the total of the first N fibonacci numbers
 # %% ###########################################################
 # Problem 3: Using common Python libraries
 # What is the standard deviation of the first 10 numbers in the fibonacci sequence? Use the numpy library to calculate the standard deviation.
-import numpy as np
+import numpy as np 
 
-fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-standard_deviation = np.std(fibonacci)
+fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34] # calculate the standard deviation of the first 10 fibonacci numbers using numpy
+standard_deviation = np.std(fibonacci) # calculate the standard deviation of the fibonacci list using numpy's std function
 
-print(standard_deviation)
+print(standard_deviation) # print the standard deviation of the first 10 fibonacci numbers
 
 # %% ###########################################################
 # Problem 4: Don't repeat yourself by writing functions
@@ -71,14 +71,14 @@ print(standard_deviation)
 # Then use this function to calculate the sums for N = 5, 10, 15, 20, 25, and 30 and print them as a list.
 
 def fibonacci_sum(N): 
-    a = 0
-    b = 1
-    total = 0
+    a = 0 # set a to the first fibonacci number
+    b = 1 # set b to the second fibonacci number
+    total = 0 # set total to 0
 
-    for count in range(N):
-        total = total + a
-        next_value = a + b
-        a = b
+    for count in range(N): # loop N times
+        total = total + a # add a to total
+        next_value = a + b # calculate the next fibonacci number
+        a = b # set a to b
         b = next_value
 
     return total
@@ -87,7 +87,7 @@ def fibonacci_sum(N):
 values = [5, 10, 15, 20, 25, 30]
 sums = []
 
-for N in values:
+for N in values: # loop through the values list and calculate the fibonacci sum for each N
     sums.append(fibonacci_sum(N))
 
 print(sums)
@@ -131,10 +131,10 @@ print("The index of the first number above your limit is: ", result)
 # less than or equal to the input "limit".
 
 
-def sum_odd_fib(limit):
+def sum_odd_fib(limit): 
     a, b = 0, 1
     total = 0
-    while b <= limit:
+    while b <= limit: 
         if b % 2 != 0:  # This line checks if the Fibonacci number is odd
             total += b
         a, b = b, a + b
